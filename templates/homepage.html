@@ -22,7 +22,7 @@
                 <h1 class="text-uppercase">Creative Cropper Tool</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
                 </p>
-                <a id="upload" class="btn btn-info btn-upload-image">Upload your image</a>
+                <button type="button" id="upload" class="btn btn-default btn-upload-image">Upload your image</button>
             </div>
         </div>
     </div>
@@ -33,20 +33,25 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header" id="modal-navbar">
-          <ul class="sources clear">
-            <li class="source local">
-              <span class="label">My files</span>
-              <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+          <ul class="tab">
+            <li class="local">
+              <a id="upload-tab" class="tablinks" onclick="openImage(event, 'upload')" id="defaultOpen">Upload</a></li>
             </li>
-            <li class="source url">
-              <span class="label">Web address</span>
-              <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <li class="url">
+              <a id="url-tab" class="tablinks" onclick="openImage(event, 'url')">Web Address(URL)</a></li>
             </li>
           </ul>
           <span class="close">&times;</span>
         </div>
-        <p>Some text in the Modal..</p>
+        <div id="upload" class="tabcontent panel">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
 
+        <div id="url" class="tabcontent panel">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
       </div>
     </div>
 

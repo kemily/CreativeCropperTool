@@ -5,38 +5,8 @@ html, body {
           font-family: 'Lato', sans-serif;
         }
 
-h1, h3, h6, label, .navbar-brand { 
+h1, h3, h6, .navbar-brand { 
     font-family: 'Montserrat', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgba(191, 191, 191, 0.8);
-}
-
-button {
-    background-color: #e6e6e6;
-    border: none;
-    color: white;
-    padding: 7px 21px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 6px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-family: 'Lato', sans-serif;
-}
-
-button:hover {
-    background: rgba(191, 191, 191, 0.8);
 }
 
 .wrapper {
@@ -119,22 +89,15 @@ a.navbar-brand {
     font-size: 18px;
     line-height: 22px;
     padding: 16px 34px;
-}
-
-.btn {
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
     white-space: normal!important;
-}
-
-.btn-info {
+    font-weight: bold;
     color: #fff;
     background-color: #666;
     border-color: #595959;
 }
 
-.btn-info:hover, .btn-info:focus, .btn-info:active {
+.btn-default:hover, .btn-default:focus, .btn-default {
     background-color: #bfbfbf;
     border-color: #b3b3b3;
 }
@@ -164,12 +127,27 @@ a.navbar-brand {
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+/*MODAL NAVBAR*/
+/*#modal-navbar {
+    background: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    margin: 20px 20px 10px 20px;
+    padding: 0;
+    height: 51px;
+    position: relative;
+}*/
+
 /* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
+#modal-navbar .close {
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: block;
+    text-decoration: none;
 }
 
 .close:hover,
@@ -180,72 +158,18 @@ a.navbar-brand {
 }
 
 
-/*MODAL NAVBAR*/
 
-#modal-navbar {
-    background: #f5f5f5;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    margin: 20px 20px 10px 20px;
-    padding: 0;
-}
 
-.modal-header {
-    height: 51px;
-    position: relative;
-}
 
-.modal-header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
-.modal-header li {
-    display: list-item;
-}
 
-.modal-header li .label {
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    width: 85px;
-    text-align: center;
-}
 
-.modal-header li .glyphicon {
-    background-position: -40px 0;
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: 26px;
-    width: 32px;
-    height: 28px;
-}
+/* MODAL PANEL */
 
-#modal-navbar .close {
-    color: rgb(85, 85, 85);
-    position: absolute;
-    top: 2px;
-    right: 8px;
-    font-size: 24px;
-    display: block;
-    text-decoration: none;
-}
-
-.modal-header .sources .source {
-    width: 85px;
-    float: left;
-    height: 51px;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-}
-
+/*.modal-content .panel {
+    height: 437px;
+    overflow: auto;
+}*/
 
 
 /*RETURN TO THE TOP SIDE BUTTON*/
