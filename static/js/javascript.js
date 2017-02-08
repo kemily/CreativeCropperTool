@@ -2,6 +2,8 @@
 
 $(function () { // this is the jquery shortcut for document.ready()
 
+/////////////////////////// MODAL WINDOW FUNCTIONALITY /////////////
+
     // Get the modal
     var modal = document.getElementById('myModal');
 
@@ -27,6 +29,25 @@ $(function () { // this is the jquery shortcut for document.ready()
             modal.style.display = "none";
         }
     };
+
+///////////////////////////// MODAL WINDOW TABS ///////////////////////////////
+
+    function openImage(evt, imageSource) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(imageSource).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
 ////////////////////// EXTRA UX AND UI FUNCTIONALITY ///////////////////////////
 
